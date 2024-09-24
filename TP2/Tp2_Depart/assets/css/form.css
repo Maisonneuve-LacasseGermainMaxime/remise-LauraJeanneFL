@@ -1,0 +1,172 @@
+/* Style du formulaire globale */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+/* Style pour les labels  */
+label {
+    margin-right: 10px;
+    line-height: 32px;
+}
+
+/* Soulignement du texte dans l'élément legend */
+legend{
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+nav .navigation-section{
+    background-color: #a27b5c;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style du bouto */
+.bouton {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+    margin: 10px;
+    font-size: 1rem;
+    background-color: #dcd7c9;
+    color: #a27b5c;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 350ms;
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+
+/* Effet au survol du bouton */
+.bouton:hover {
+    background-color: #a27b5c;
+    color: #dcd7c9;
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+/* Style des champs du formulaire */
+form .champs-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+/* Style des inputs */
+form input {
+    border-radius: 5px;
+    border: 2px solid  #dcd7c9;
+    outline: none;
+}
+
+/* Style pour les boutons radio et leur disposition */
+.champs-form input[type="radio"] {
+    display: inline-block; 
+    margin-right: 5px; 
+}
+
+.champs-form label {
+    display: block; 
+    margin-bottom: 10px; 
+}
+
+.champs-form input[type="radio"] + label {
+    display: inline; 
+}
+
+/* Styles pour les boutons de submit et reset */
+form input[type="submit"],
+form input[type="reset"],
+form button {
+    padding: 0.5rem;
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+    transition: all 350ms;
+    width: fit-content;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Effet au survol du bouton */
+form input[type="submit"]:hover,
+form input[type="reset"]:hover,
+form button:hover {
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+/* Style des boutons désactivés */ 
+form input[type="submit"]:disabled,
+form button:disabled {
+    background-color: grey;
+    pointer-events: not-allowed;
+}
+
+/* Styles pour un groupe de champs dans le formulaire */
+form .groupe-champs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+/* Masquer les messages d'erreur par défaut, sauf si l'élément associé est invalide */
+form [name] + p.error-message {
+    display: none;
+} 
+
+/* Afficher les messages d'erreur si le champ est invalide */
+form .invalid + p.error-message {
+    display: initial;
+} 
+
+/* Style du champ invalide */
+form .invalid {
+    border: 4px solid red;
+    background-color: #ffe6e6;
+} 
+
+/* Style de la section principale */
+section {
+    width: 90vw;
+    margin: 0;
+    padding: 1rem;
+    border: 0.5rem solid #2c3639;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style spécial pour une section invalide  */
+section[data-page].invalid {
+    border: 5px dotted firebrick;
+}
+
+/* Style de la navigation dans la section */
+section nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+/* Classes utilitaires pour désactiver les éléments et les rendre invisibles */
+/* Exception et affichage. */
+.disabled {
+    background-color: grey;
+    pointer-events: none;
+}
+
+.invisible {
+    display: none;
+}
