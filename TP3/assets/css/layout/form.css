@@ -1,0 +1,146 @@
+/* Style du formulaire globale */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: var(--espacement-large);
+  padding: var(--espacement-moyen) ;
+  margin: var(--espacement-moyen);
+}
+
+/* Style pour les labels  */
+label {
+  margin-right: var(--espacement-petit);
+  line-height: 32px;
+}
+
+/* Soulignement du texte dans l'élément legend */
+legend {
+  text-decoration: underline;
+  margin-top: var(--espacement-petit);
+}
+
+.navigation-section {
+  background-color: var(--couleur-accent);
+  padding: var(--espacement-)
+}
+
+
+/* Style des champs du formulaire */
+form .champs-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: var(--espacement-petit);
+}
+
+/* Style des inputs */
+form input {
+  border-radius: 5px;
+  border: 2px solid var(--couleur-accent);
+  outline: none;
+}
+
+/* Style pour les boutons radio et leur disposition */
+.champs-form input[type="radio"] {
+  display: inline-block;
+  margin-right: var(--espacement-t-petit);
+}
+
+.champs-form label {
+  display: block;
+  margin-bottom: var(--espacement-petit);
+}
+
+.champs-form input[type="radio"] + label {
+  display: inline;
+}
+
+/* Styles pour les boutons de submit et reset */
+form input[type="submit"],
+form input[type="reset"],
+form button {
+  padding: var(--espacement-petit);
+  color: white;
+  cursor: pointer;
+  transition: all 350ms;
+  width: fit-content;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Effet au survol du bouton */
+form input[type="submit"]:hover,
+form input[type="reset"]:hover,
+form button:hover {
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+
+/* Style des boutons désactivés */
+form input[type="submit"]:disabled,
+form button:disabled {
+  background-color: var(--couleur-disable);
+  pointer-events: not-allowed;
+}
+
+/* Styles pour un groupe de champs dans le formulaire */
+form .groupe-champs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: var(--espacement-petit);
+}
+
+/* Masquer les messages d'erreur par défaut, sauf si l'élément associé est invalide */
+form [name] + p.error-message {
+  display: none;
+}
+
+/* Afficher les messages d'erreur si le champ est invalide */
+form .invalid + p.error-message {
+  display: initial;
+}
+
+/* Style du champ invalide */
+form .invalid {
+  border: 4px solid red;
+  background-color: var(--couleur-clair);
+}
+
+/* Style de la section principale */
+form > section {
+  width: 90vw;
+  margin: 0;
+  padding: var(--espacement-moyen);
+  border: 0.5rem solid #2c3639;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style spécial pour une section invalide  */
+section[data-page].invalid {
+  border: 5px dotted firebrick;
+}
+
+/* Style de la navigation dans la section */
+section nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+/* Classes utilitaires pour désactiver les éléments et les rendre invisibles */
+/* Exception et affichage. */
+.disabled {
+  background-color: var(--couleur-disable);
+  pointer-events: none;
+}
+
+.invisible {
+  display: none;
+}

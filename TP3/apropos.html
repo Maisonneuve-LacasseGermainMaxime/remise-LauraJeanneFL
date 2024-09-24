@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <script type="module" src="./assets/js/pages/apropos.js"></script>
+
+        <title>À propos</title>
+    </head>
+    <body class="anime-grad-couleur" data-page="a-propos">
+
+        <header>
+            <nav class="nav-links">
+              <img src="assets/img/coffee_logo.png" alt="logo" class="logo" />
+              <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html" class="lien-actif">À propos</a></li>
+                <li><a href="formulaire.html">Formulaire d'achat</a></li>
+                <li [data-mode]="nuit" class="bouton conteneur-mode-nuit mode_sombre">Mode sombre</li>
+                <li [data-mode]="jour" class="bouton conteneur-mode-nuit mode_claire">Mode clair</li>
+              </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="section" id="section1">
+                <h2>Notre Histoire</h2>
+                <p>
+                    Fondée par des passionnés de boissons artisanales, 
+                    notre aventure a commencé avec une simple idée : 
+                    offrir des produits de qualité qui éveillent les sens. 
+                    En alliant savoir-faire traditionnel et innovation, 
+                    nous avons créé un espace où chaque gorgée est une expérience unique. 
+                    Aujourd’hui, nous partageons cette passion avec vous à travers des sélections
+                    soigneusement préparées, pour enrichir vos moments de détente et de plaisir.
+                </p>
+                
+            </section>
+
+            <section class="section droite" id="section2">
+                <h2>Notre Collection</h2>
+                <p>
+                    Notre collection de boissons vous transporte à travers des saveurs et des arômes uniques. 
+                    Du café fraîchement torréfié aux tisanes apaisantes, en passant par nos smoothies revitalisants, 
+                    chaque produit est conçu pour répondre à vos envies du moment. 
+                    Que vous cherchiez un coup de boost ou une pause bien-être, nos collections sont là pour satisfaire chaque palais.
+                </p>
+                <a href="/">Voir les derniers arrivages</a>
+            </section>
+
+            <!-- Le gabarit à utiliser -->
+            <div class="carrousel section" data-carrousel>
+                <div class="bouton" data-direction="-1">Reculer</div>
+                
+                <div class="conteneur-image-principale">
+                    <img src="assets/img/cafe_cappucinno_chaud.jpg" alt="image-caroussel">
+                </div>
+                <div class="bouton" data-direction="1">Avancer</div>
+
+                
+                    <!-- La liste où placer le clone -->
+                <div class="carrousel-liste-images"></div>
+
+                <template id="conteneur-image-navigation">
+                    <div class="conteneur-image-navigation">
+                        <img src="assets/img/cafe_moka_chaud.jpg" alt=""/>
+                    </div>
+                </template>
+
+              
+            </div>
+
+            <section class="section droite" id="section3">
+                <h2>Équipe</h2>
+                <p>
+                    Derrière chaque tasse se cache une équipe d’experts dévoués et passionnés. 
+                    Baristas, artisans torréfacteurs et créateurs de saveurs travaillent main dans la main
+                    pour vous proposer des produits d’exception. 
+                    Ensemble, nous mettons un point d’honneur à partager avec vous notre amour du bon goût et notre expertise.
+                </p>
+            </section>
+
+            <section class="section" id="section4">
+                <h2>Nos Valeurs</h2>
+                <p>
+                    Qualité, authenticité et durabilité sont au cœur de notre démarche. 
+                    Nous nous engageons à sélectionner des ingrédients naturels, 
+                    issus de filières responsables, pour vous offrir des boissons qui respectent à la fois l’environnement
+                    et les producteurs. 
+                    Chaque produit incarne nos valeurs : une production éthique, un goût exceptionnel 
+                    et une expérience qui fait du bien à tous.
+                </p>
+            </section>
+
+            <section class="section droite" id="section5">
+                <h2>Contact</h2>
+                <p>Vous avez des questions ? N'hésitez pas à nous contacter.</p>
+            </section>
+
+            <div class="modale-conteneur invisible">
+                <div class="modale">
+                    <h2 class="modale-header">Rejoignez notre infolettre !</h2>
+                    <p>Inscrivez-vous pour recevoir des offres exclusives, des recettes savoureuses et des conseils sur nos boissons directement dans votre boîte mail.</p>
+                    <p><strong>Abonnez-vous maintenant et profitez d'une remise de 10 % sur votre prochaine commande !</strong></p>
+                    <div class="fermer-modale interactive">
+                        <i class="icone fermer"></i>Fermer
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

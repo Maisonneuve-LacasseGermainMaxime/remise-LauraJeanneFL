@@ -1,0 +1,9 @@
+.conteneur-mode-nuit {
+    & [data-mode]{
+        cursor: pointer;
+    }
+
+    & [data-mode]:hover {
+        color: var(--couleur-primaire);
+    }
+}

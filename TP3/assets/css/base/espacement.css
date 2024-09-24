@@ -1,0 +1,8 @@
+:root {
+    --espacement-t-petit: 4px;
+    --espacement-petit: 8px;
+    --espacement-moyen: 16px; /* 1rem= 16px*/
+    --espacement-large: 32px;
+    --esapcement-xl: 64px;
+    --esapcement-xxl: 120px;
+}

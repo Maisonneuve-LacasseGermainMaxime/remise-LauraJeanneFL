@@ -1,0 +1,56 @@
+.interactive {
+  cursor: pointer;
+}
+
+.disabled {
+  cursor: none;
+  background-color: var(--couleur-disable);
+  pointer-events: none;
+}
+
+/* Animation style "vapeur" :)*/
+@keyframes steam {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+/* Effect/Animation de survol de surbrillance :) */
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(255, 223, 186, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 223, 186, 1);
+  }
+}
+
+/* Apppliquer pour l'animation steam */
+.anime {
+  position: relative;
+  animation: steam 3s infinite ease-in-out;
+}
+
+/* Appliquer pour le glow effect */
+.logo:hover {
+  animation: glow 1.5s infinite ease-in-out;
+  box-shadow: 0 0 20px rgba(255, 223, 186, 0.7);
+  transition: box-shadow 0.3s ease;
+}
+
+.sans-opacite {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.invisible {
+  display: none;
+}

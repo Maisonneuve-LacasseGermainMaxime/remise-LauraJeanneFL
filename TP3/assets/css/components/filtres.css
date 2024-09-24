@@ -1,0 +1,71 @@
+.section-header {
+  display: block;
+  gap: 2rem;
+  padding: var(--espacement-moyen);
+
+  justify-content: space-between;
+  align-items: center;
+  }
+
+  .section-header .filtres .bouton{
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espacement-petit);
+  
+  justify-content: center;
+  align-items: center;
+  
+  background-color: var(--couleur-fonce);
+  color: var(--couleur-primaire);
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: all 350ms;
+  }
+
+  .section-header .filtres .bouton:hover {
+    background-color: var(--couleur-accent);
+    color: var(--couleur-claire);
+    transform: scale(1.05);
+    text-decoration: underline;
+  }
+/* 
+  .section-header .filtres  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: var(--espacement-t-petit);
+  font-size: 0.7rem;
+  border-radius: 25px;
+  cursor: pointer;
+  }
+
+.section-header .filtres .filtres:hover {
+transform: scale(1.05) color;
+text-decoration: underline;
+}
+
+.selected-filter{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.section-header .filtres {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--espacement-large);
+  
+}
+
+.selected-filter:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--couleur-accent);
+  background-color: var(--couleur-accent);
+}
+ */

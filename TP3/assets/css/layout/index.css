@@ -1,0 +1,73 @@
+main {
+  display: flex;
+
+    & main > aside {
+    border: 1px solid var(--couleur-fonce);
+    color: var(--couleur-accent);
+    font-size: 12px;
+    border-radius: 10px;
+
+    margin: 2rem;
+    max-width: 100%;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    main > aside,
+    main > section {
+    padding: var(--espacement-large);
+
+    }
+
+    .detail {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--espacement-petit);
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    
+    align-items: center;
+    }
+
+    .detail_img {
+     max-width: 50%;
+     object-fit: contain;
+     margin: 0;
+    }
+    
+    .grille-produits {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-end;
+        padding: 1em;
+        flex-basis: 60%;
+    }
+    
+    .produit {
+        padding: 40px;
+        cursor: pointer;
+        transition: all 350ms;
+        height: 250px;
+    }
+    
+    .grille-produits .produit:hover {
+        transform: scale(1.05);
+        filter: brightness(1.4);
+    }
+    
+    .grille-produits .produit .produit__img {
+            width: 100%; 
+            max-width: 10px; 
+            height: auto; 
+            object-fit: contain;
+            display: block;
+            margin: 0 auto; 
+    }
+
+}

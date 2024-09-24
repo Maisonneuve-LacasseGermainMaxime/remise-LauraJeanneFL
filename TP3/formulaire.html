@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/form.css">
+    <script src="assets/js/pages/formulaire.js" defer></script>
+    <script src="assets/js/components/navigation.js" defer></script>
+</head>
+<body class="anime-grad-couleur" >
+    <header>
+        <nav class="nav-links">
+            <img src="assets/img/coffee_logo.png" alt="logo" class="logo" />
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="formulaire.html" class="lien-actif">Formulaire d'achat</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="" method="get" id="formulaire">
+            <h1>Formulaire d'achat</h1>
+            <section data-page="1">
+                <h2>1. Informations sur le client</h2>
+                <div class="champs-form">
+                    <label for="prenom">Prénom:</label>
+                    <input type="text" name="prenom" id="prenom" minlength="3" maxlength="50" required >
+                    <small class="error-message">Vous devez saisir un prénom valide</small>
+                </div>
+
+                <div class="champs-form">
+                    <label for="nom">Nom:</label>
+                    <input type="text" name="nom" id="nom" maxlength="30" required >
+                    <small class="error-message">Vous devez saisir un nom valide</small>
+                </div>
+
+                <div class="champs-form">
+                    <label for="courriel">Adresse courriel:</label>
+                    <input type="email" id="courriel" name="courriel" maxlength="50" required>
+                    <small class="error-message">Vous devez saisir un courriel valide</small>
+                </div>
+
+                <div class="champs-form">
+                    <label for="telephone">Numéro de téléphone:</label>
+                    <input type="tel" 
+                    name="telephone" 
+                    id="telephone" 
+                    minlength="11" 
+                    pattern="^([1]?)\(?([0-9]{3})\)?[\s\-\.]([0-9]{3})[\s\-\.]([0-9]{4})$"
+                    required>
+                    <small class="error-message">Vous devez saisir un numéro de téléphone valide</small>
+                </div>
+
+                <nav class="navigation-section">
+                    <div class="bouton" data-direction="-1">Précédent</div>
+                    <div class="bouton" data-direction="1">Suivant</div>
+                </nav>
+            </section>
+
+            <section data-page="2" style="display:none;">
+                <h2>2. Informations sur la livraison</h2>
+                <div class="champs-form">
+                    <legend>Type de commande:</legend>
+                    <input type="radio" name="radio" id="radio1" value="Ramassage" checked>
+                    <label for="radio1">Ramasage</label>
+                    
+                    <input type="radio" name="radio" id="radio2" value="Livraison">
+                    <label for="radio2">Livraison</label>
+
+                    <input type="radio" name="radio" id="radio3" value="Livraison accélérée">
+                    <label for="radio3">Livraison accélérée</label>
+                </div>
+
+                <div class="champs-form">
+                    <label for="adresse">Adresse:</label>
+                    <input type="text" name="adresse" id="adresse" disabled required > 
+                    <small class="error-message">Vous devez saisir une adresse valide</small>
+                </div>
+
+                <div class="champs-form">
+                    <label for="ville">Ville:</label>
+                    <input type="text" name="ville" id="ville" required >
+                    <small class="error-message">Vous devez saisir une ville</small>
+                </div>
+
+                <div class="champs-form">
+                    <label for="code-postal">Code postal:</label>
+                    <input type="text" name="code-postal" id="code-postal" pattern="[A-z][0-9][A-z]\s?[0-9][A-z][0-9]" required>
+                    <small class="error-message">Vous devez saisir un code postal valide</small>
+                </div>
+
+                <nav class="navigation-section">
+                    <button type="button" class="bouton" data-direction="-1">Précédent</button>
+                    <button type="button" class="bouton" data-direction="1">Suivant</button>
+                </nav>
+            </section>
+
+            <section class="resume" data-page="3" data-name="resume">
+                <h2>Résumé de la commande</h2>
+                <article>
+                    <h3>Informations personnelles</h3>
+                    <p>Prénom: <span data-name="prenom"></span></p>
+                    <p>Nom: <span data-name="nom"></span></p>
+                    <p>Adresse courriel: <span data-name="courriel"></span></p>
+                    <p>Numéro de téléphone: <span data-name="telephone"></span></p>
+                </article>
+
+                <article>
+                    <h3>Informations de livraison</h3>
+                    <p>Adresse: <span data-name="adresse"></span></p>
+                    <p>Ville: <span data-name="ville"></span></p>
+                    <p>Code postal: <span data-name="code-postal"></span></p>
+                    <p>Type de commande: <span data-name="radio"></span></p>
+                </article>
+
+                <nav class="navigation-section">
+                    <button type="button" class="bouton" data-direction="-1">Précédent</button>
+                    <input type="submit" class="bouton" value="Envoyer le formulaire" />
+                </nav>
+            </section>
+        </form>
+    </main>
+</body>
+</html>
