@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil TP1</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/coffee_logo.png"
+      type="image/x-icon"
+    />
+    <script src="assets/js/accueil.js" defer></script>
+    <script src="assets/js/navigation.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-links">
+        <img src="assets/img/coffee_logo.png" alt="logo" class="logo" />
+        <ul>
+          <li><a href="index.html" class="lien-actif">Accueil</a></li>
+          <li><a href="#">À propos</a></li>
+          <li><a href="formulaire.html">Formulaire d'achat</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <h1>Menu</h1>
+        <div class="liste-boissons">
+            <div class="boisson"><h3>Boisson </h3></div> 
+        </div>
+        <aside class="detail">
+            <h2>Boisson sélectionnée :</h2>
+            <p><span class="boisson-selection"></span></p>
+        </aside>
+        <section>
+            <!-- Liste des boissons à afficher -->
+            <div class="section-header">
+            <div class="filtres">
+                <div class="filtre-froid">Filtrer par boissons froides</div>
+                <div class="filtre-chaud">Filtrer par boissons chaudes</div>
+                <div class="tri-crois">Trier par prix croissant</div>
+                <div class="tri-decrois">Trier par prix decroissant</div>
+                <div class="reafficher">Réafficher</div>
+            </div>
+            </div>
+        </section>
+      <footer>
+        <p>Site créé par Laura-Jeanne Fournier Lanctôt</p>
+        <p>Version : 1.0</p>
+      </footer>
+    </main>
+  </body>
+</html>
