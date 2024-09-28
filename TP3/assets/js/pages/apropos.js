@@ -93,15 +93,23 @@ function init() {
     });
 
     const modeToggle = document.querySelectorAll("[data-mode]");
+    console.log("Boutons mode trouvés :", modeToggle);
 
     modeToggle.forEach(button => {
         button.addEventListener("click", () => {
-            const currentTheme = document.body.getAttribute("data-theme");
-            if (currentTheme === "nuit") {
-                document.body.setAttribute("data-theme", "jour");
+            const currentMode = document.body.getAttribute("data-mode");
+            const backgroundElement = document.querySelector('.anime-grad-couleur');
+
+            if (currentMode === "nuit") {
+                document.body.setAttribute("data-mode", "jour");
+                backgroundElement.classList.remove("anime-grad-couleur-nuit");
+                backgroundElement.classList.add("anime-grad-couleur-jour");
             } else {
-                document.body.setAttribute("data-theme", "nuit");
+                document.body.setAttribute("data-mode", "nuit");
+                backgroundElement.classList.remove("anime-grad-couleur-jour");
+                backgroundElement.classList.add("anime-grad-couleur-nuit");
             }
+            console.log("Thème actuel :", document.body.getAttribute("data-mode"))
         });
     });
 }

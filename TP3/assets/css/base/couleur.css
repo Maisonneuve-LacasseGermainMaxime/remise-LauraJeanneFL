@@ -1,30 +1,38 @@
-:root, body[data-theme="jour"] {
+:root, body[data-mode="jour"] {
     --couleur-primaire: #dcd7c9 ;
     --couleur-accent: #a27b5c;
   
     --couleur-fonce: #994c44;
     --couleur-sombre: #39444F;
-    --couleur-verte: #A49D84;
     --couleur-orange: #9c583c;
 
-    --couleur-reset: grey ;
-    --couleur-disable: tomato;
+ 
+    --couleur-disable: grey;
 
     --couleur-texte-noir: #000000;
     --couleur-claire: #ffffff;
-
 }
 
-body[data-theme="nuit"] {
-    background-color: #000000;
-    color: #ffffff; 
+body[data-mode="nuit"] {
+    background-color: black;
+    color: var(--couleur-claire);
+} 
+
+
+body[data-mode="nuit"].anime-grad-couleur {
+    background: linear-gradient(182deg, #121212, #333333, #555555);
+    background-size: 400% 400%;
+    animation: anime-grad-couleur-nuit 20s ease infinite;
+}
+
+@keyframes anime-grad-couleur-nuit {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
 }
 
 nav {
     background-color: var(--couleur-fonce);
 }
 
-body[data-theme="nuit"] nav {
-    background-color: #444; 
-}
 

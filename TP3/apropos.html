@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link rel="stylesheet" href="assets/css/styles.css" />
+        <link rel="stylesheet" href="assets/css/styles.css">
         <script type="module" src="./assets/js/pages/apropos.js"></script>
 
         <title>À propos</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     </head>
     <body class="anime-grad-couleur" data-page="a-propos">
-
         <header>
             <nav class="nav-links">
-              <img src="assets/img/coffee_logo.png" alt="logo" class="logo" />
+              <img src="assets/img/coffee_logo.png" alt="logo" class="logo">
               <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="apropos.html" class="lien-actif">À propos</a></li>
                 <li><a href="formulaire.html">Formulaire d'achat</a></li>
-                <li [data-mode]="nuit" class="bouton conteneur-mode-nuit mode_sombre">Mode sombre</li>
-                <li [data-mode]="jour" class="bouton conteneur-mode-nuit mode_claire">Mode clair</li>
+                <li data-mode="toggle" class="bouton conteneur-mode-nuit mode_sombre">Mode sombre</li>
+                <li data-mode="toggle" class="bouton conteneur-mode-nuit mode_claire">Mode clair</li>
               </ul>
             </nav>
         </header>
         <main>
+            <h1>A propos</h1>
             <section class="section" id="section1">
                 <h2>Notre Histoire</h2>
                 <p>
@@ -64,7 +68,7 @@
 
                 <template id="conteneur-image-navigation">
                     <div class="conteneur-image-navigation">
-                        <img src="assets/img/cafe_moka_chaud.jpg" alt=""/>
+                        <img src="assets/img/cafe_moka_chaud.jpg" alt="image-conteneur">
                     </div>
                 </template>
 
@@ -100,11 +104,13 @@
 
             <div class="modale-conteneur invisible">
                 <div class="modale">
+                    <img src="assets/img/grain_cafe.jpg" alt="image-pop-up">
                     <h2 class="modale-header">Rejoignez notre infolettre !</h2>
                     <p>Inscrivez-vous pour recevoir des offres exclusives, des recettes savoureuses et des conseils sur nos boissons directement dans votre boîte mail.</p>
                     <p><strong>Abonnez-vous maintenant et profitez d'une remise de 10 % sur votre prochaine commande !</strong></p>
+                    <input type="email" placeholder="Votre adresse email" required>
                     <div class="fermer-modale interactive">
-                        <i class="icone fermer"></i>Fermer
+                        <i class="fa-solid fa-x">Fermer</i>
                     </div>
                 </div>
             </div>

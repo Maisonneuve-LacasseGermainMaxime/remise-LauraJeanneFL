@@ -1,5 +1,6 @@
 .modale-conteneur {
   display: flex;
+  flex-wrap: wrap;
   position: fixed;
   top: 0;
   left: 0;
@@ -12,10 +13,17 @@
   align-items: center;
   z-index: 666;
 
+  & img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 20px;
+  }
+
   & .modale {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 10px;
     position: relative;
     padding: var(--espacement-moyen);
 
@@ -31,7 +39,7 @@
 
     & .modale-header {
       font-weight: 600;
-      padding: 20px;
+      padding: 10px;
     }
 
     & .fermer-modale {

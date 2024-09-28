@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire</title>
-    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/form.css">
+    
     <script src="assets/js/pages/formulaire.js" defer></script>
     <script src="assets/js/components/navigation.js" defer></script>
 </head>
-<body class="anime-grad-couleur" >
+<body class="anime-grad-couleur">
     <header>
         <nav class="nav-links">
-            <img src="assets/img/coffee_logo.png" alt="logo" class="logo" />
+            <img src="assets/img/coffee_logo.png" alt="logo" class="logo">
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="apropos.html">À propos</a></li>
                 <li><a href="formulaire.html" class="lien-actif">Formulaire d'achat</a></li>
+                <li data-mode="toggle" class="bouton conteneur-mode-nuit mode_sombre">Mode sombre</li>
+                <li data-mode="toggle" class="bouton conteneur-mode-nuit mode_claire">Mode clair</li>
             </ul>
         </nav>
     </header>
     <main>
-        <form action="" method="get" id="formulaire">
-            <h1>Formulaire d'achat</h1>
+        <form action="form.php" method="get" id="formulaire">
+            <h2>Formulaire d'achat</h2>
             <section data-page="1">
                 <h2>1. Informations sur le client</h2>
                 <div class="champs-form">
@@ -118,7 +122,7 @@
 
                 <nav class="navigation-section">
                     <button type="button" class="bouton" data-direction="-1">Précédent</button>
-                    <input type="submit" class="bouton" value="Envoyer le formulaire" />
+                    <input type="submit" class="bouton" value="Envoyer le formulaire">
                 </nav>
             </section>
         </form>

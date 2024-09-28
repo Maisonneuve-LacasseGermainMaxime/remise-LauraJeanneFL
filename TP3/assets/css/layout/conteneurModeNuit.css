@@ -1,9 +1,7 @@
-.conteneur-mode-nuit {
-    & [data-mode]{
-        cursor: pointer;
-    }
+.conteneur-mode-nuit[data-mode] {
+    cursor: pointer;
+}
 
-    & [data-mode]:hover {
-        color: var(--couleur-primaire);
-    }
+.conteneur-mode-nuit[data-mode]:hover {
+    color: var(--couleur-primaire);
 }

@@ -15,7 +15,7 @@ class ScrollAnimator {
         this.options = {
             root: this.zone,
             rootMargin: "0px",
-            threshold: 0.5,
+            threshold: 0.9,
         };
 
         //Création de l'instance de l'intersection observer

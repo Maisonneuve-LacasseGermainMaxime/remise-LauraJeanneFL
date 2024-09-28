@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
-    <link rel="stylesheet" href="assets/css/styles.css"/>
-    <link rel="shortcut icon" href="assets/img/coffee_logo.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="assets/img/coffee_logo.png" type="image/x-icon">
     <script src="assets/js/pages/accueil.js" defer></script>
     <script src="assets/js/components/navigation.js" defer></script>
   </head>
   <body class="anime-grad-couleur" >
     <header>
       <nav class="nav-links">
-        <img src="assets/img/coffee_logo.png" alt="logo-entête" class="logo" />
+        <img src="assets/img/coffee_logo.png" alt="logo-entête" class="logo">
         <ul>
           <li><a href="index.html" class="lien-actif">Accueil</a></li>
           <li><a href="apropos.html">À propos</a></li>
           <li><a href="formulaire.html">Formulaire d'achat</a></li>
+          <li data-mode="toggle" class="bouton conteneur-mode-nuit mode_sombre">Mode sombre</li>
+          <li data-mode="toggle" class="bouton conteneur-mode-nuit mode_claire">Mode clair</li>
         </ul>
       </nav>
     </header>
@@ -27,8 +29,7 @@
           <img
             class="detail_img"
             src="assets/img/cafe_latte_chaud.jpg"
-            alt=""
-          />
+            alt="image-detail">
           <h2 class="detail_nom">Nom: Cafe latte</h2>
           <p class="detail_description">Type de boisson: chaude</p>
           <p class="detail_prix">Prix: 4.50 $</p>
@@ -36,7 +37,6 @@
 
             <!-- Liste de filtres -->
             <div class="section-header">
-              <h1>Liste des boissons</h1>
               <div class="filtres">
                   <div class="bouton filtre" id="filtre-froid">Boissons froides</div>
                   <div class="bouton filtre" id="filtre-chaud">Boissons chaudes</div>
@@ -52,17 +52,17 @@
         <div class="grille-produits">
           <!-- Produits exemple -->
           <div class="produit">
-            <img class="produit__img" src="assets/img/cafe_cappucinno_chaud.jpg" alt="Boisson 1" />
+            <img class="produit__img" src="assets/img/cafe_cappucinno_chaud.jpg" alt="Boisson 1">
             <h2>Boisson 1</h2>
             <p>Prix: 3.00 $</p>
           </div>
           <div class="produit">
-            <img class="produit__img" src="assets/img/cafe_cappucinno_froid.jpg" alt="Boisson 2" />
+            <img class="produit__img" src="assets/img/cafe_cappucinno_froid.jpg" alt="Boisson 2">
             <h2>Boisson 2</h2>
             <p>Prix: 4.50 $</p>
           </div>
           <div class="produit">
-            <img class="produit__img" src="assets/img/cafe_filtre.jpg" alt="Boisson 3" />
+            <img class="produit__img" src="assets/img/cafe_filtre.jpg" alt="Boisson 3">
             <h2>Boisson 3</h2>
             <p>Prix: 5.00 $</p>
           </div>
