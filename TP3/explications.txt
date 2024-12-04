@@ -1,0 +1,69 @@
+Ma page web se concentre sur la vente de différents styles de boissons pour un café. Les fonctionnalités principales incluent :
+
+	1.	Navigation adaptative : J’ai mis en place un système de navigation qui s’adapte selon les interactions de l’utilisateur. 
+        De plus, j’ai ajouté un mode clair/sombre, où la version sombre propose un fond noir avec du texte blanc.
+
+	2.	Système de filtrage et de tri dynamique : Les utilisateurs peuvent trier et filtrer les boissons selon différents critères, 
+    tels que le type de boisson (chaud/froid). Cela se fait de manière dynamique grâce à JavaScript, permettant 
+    une interaction fluide.
+
+	3.	Animation du logo et autres éléments visuels : Un logo représentant une tasse de café a été ajouté et animé pour attirer 
+    l’attention sur la marque. 
+
+	4.	Modale d’offres promotionnelles : Un modal s’affiche après 5 secondes sur la page. 
+    Ce modal inclut un bouton de fermeture pour permettre à l’utilisateur de le masquer.
+
+	5.	Carrousel avec effet de glow : Un carrousel permet de faire défiler les différentes boissons proposées. 
+    Un effet de glow a été ajouté autour de ce carrousel pour lui donner un aspect plus interactif et engageant.
+
+	6.	Système de scrolling fluide par section : Pour améliorer l’expérience utilisateur, j’ai intégré un défilement par sections,
+    permettant de passer d’une section à l’autre sans confusion.
+
+
+Choix de design:
+Pour le design, j’ai opté pour une approche moderne et minimaliste.
+J’ai également choisi des animations subtiles pour éviter de distraire l’utilisateur, tout en gardant le site interactif.
+
+Les éléments sont espacés de manière à ne pas surcharger la page, et les boutons ainsi que les liens sont bien visibles pour faciliter la navigation.
+Les couleurs des boissons (différentes nuances de brun et debeige) rappellent les produits vendus tout en gardant une harmonie visuelle.
+
+Difficultés rencontrées
+	1.	Filtrage et tri dynamique en JavaScript : L’une des premières difficultés rencontrées a été l’implémentation correcte du filtrage et du tri des boissons. 
+    Il a fallu plusieurs ajustements pour garantir que les filtres ne se chevauchent pas et fonctionnent en temps réel.
+
+	2.	Animation du logo : J’ai rencontré quelques défis avec l’animation du logo, notamment en ce qui concerne le mouvement. 
+   
+	3.	Mode clair/sombre : Mettre en place un mode clair/sombre fonctionnel était également un défi. 
+    Initialement, le mode sombre ne s’appliquait pas correctement à tous les éléments, 
+    ce qui a nécessité un réajustement de la structure CSS, notamment en jonglant avec des fichiers tels que anime-grad-couleur.css et couleur.css.
+    Finalement, cela était dû à une simple erreur d'espacement dans le noms des classes css.
+
+	4.	Gestion des animations et transitions en CSS : La gestion des transitions et des animations, 
+    notamment pour l’agrandissement et la rotation d’éléments au survol, a nécessité un travail minutieux pour assurer une expérience fluide.
+
+
+Structure du code et organisation des fichiers
+Organisation des fichiers
+
+Le code est structuré de manière modulaire avec des sections claires dans les fichiers CSS et JavaScript. 
+	•   J’ai séparé les animations, les interactions dynamiques et les styles généraux pour faciliter la lisibilité et la maintenabilité du projet. 
+	•   Je me suis beaucoup fié à votre façon de faire/structure de vos cours. 
+	•	Images et médias : Les images du logo et des produits sont stockées dans un dossier images pour faciliter l’organisation et l’accès.
+    •	le document style.css : regroupe tous les docuement css pour une importation des feuilles de styles simple et efficace dans la fichier HTML.
+
+
+Tests et qualité du code
+
+Pour assurer la qualité de la page, plusieurs étapes de tests ont été réalisées :
+
+	1.	Test en local sur différents navigateurs : J’ai testé la page sur plusieurs navigateurs (Chrome, Firefox, Safari) pour m’assurer de la compatibilité
+     et du bon rendu des animations. Les différences d’affichage, notamment concernant les animations, ont été ajustées pour un rendu homogène.
+
+	2.	Tests de performance et de réactivité : J’ai utilisé des outils comme les DevTools de Chrome pour tester l'adaptivité du site sur des résolutions d’écran différentes
+    (desktop, tablette, mobile). Des ajustements ont été faits pour garantir que les éléments se réorganisent correctement sur les petits écrans.
+
+	3.	Validation du code CSS et HTML : J’ai utilisé des validateurs en ligne pour vérifier que le code HTML et CSS respecte les standards du W3C.
+    Les erreurs et avertissements ont été corrigés pour assurer la robustesse du site.
+
+	4.	Débogage en JavaScript : Pour m’assurer de la qualité du code JavaScript, j’ai utilisé des consoles de débogage et ajouté des tests manuels
+    pour vérifier que les interactions fonctionnent correctement sans erreurs dans la console.

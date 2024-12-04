@@ -1,0 +1,30 @@
+.anime-grad-couleur {
+    background: linear-gradient(182deg, #dcd7c9, #a27b5c, #baa289);
+    background-size: 400% 400%;
+
+    -webkit-animation: anime-grad-couleur 20s ease infinite;
+    -moz-animation: anime-grad-couleur 20s ease infinite;
+    -o-animation: anime-grad-couleur 20s ease infinite;
+    animation: anime-grad-couleur 20s ease infinite;
+}
+
+@-webkit-keyframes anime-grad-couleur {
+    0%{background-position:52% 0%}
+    50%{background-position:49% 100%}
+    100%{background-position:52% 0%}
+}
+@-moz-keyframes anime-grad-couleur {
+    0%{background-position:52% 0%}
+    50%{background-position:49% 100%}
+    100%{background-position:52% 0%}
+}
+@-o-keyframes anime-grad-couleur {
+    0%{background-position:52% 0%}
+    50%{background-position:49% 100%}
+    100%{background-position:52% 0%}
+}
+@keyframes anime-grad-couleur {
+    0%{background-position:52% 0%}
+    50%{background-position:49% 100%}
+    100%{background-position:52% 0%}
+}

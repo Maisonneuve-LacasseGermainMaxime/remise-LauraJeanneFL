@@ -1,0 +1,29 @@
+.bouton {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: var(--espacement-petit);
+  margin: var(--espacement-petit);
+  font-size: 1rem;
+
+  background-color: var(--couleur-fonce);
+  color: var(--couleur-claire);
+
+  border-radius: 25px;
+
+  cursor: pointer;
+  transition: all 350ms;
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+
+.bouton:hover {
+  background-color: var(--couleur-fonce); 
+
+  transform: scale(1.05);
+  text-decoration: underline;
+}

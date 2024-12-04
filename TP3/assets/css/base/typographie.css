@@ -1,0 +1,53 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Yanone+Kaffeesatz:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap");
+
+:root {
+    font-family: "Abril Fatface";
+    letter-spacing: 1.5px;
+
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: "Yanone Kaffeesatz";
+}
+
+a {
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 350ms;
+    cursor: pointer;
+    font-family: "Yanone Kaffeesatz";
+    letter-spacing: 1.5px;
+}
+
+a:hover {
+    color: var(--couleur-primaire);
+    text-decoration: underline;
+}
+
+a.actif{
+    color: var(--couleur-primaire);
+    text-decoration: underline;
+    font-weight: bold;
+}

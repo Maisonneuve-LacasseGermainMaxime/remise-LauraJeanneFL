@@ -1,0 +1,17 @@
+@keyframes anime {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+.anime {
+    animation: steam 3s infinite ease-in-out;
+}

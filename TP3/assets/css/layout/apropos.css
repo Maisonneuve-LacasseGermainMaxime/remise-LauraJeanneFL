@@ -1,0 +1,33 @@
+[data-page="a-propos"] {
+    & main {
+        display: flex;
+        flex-direction: column;
+        padding: var(--espacement-moyen);
+    }
+
+    & a{
+        color: white;
+        transition: color 300ms;
+    }
+
+    & .section {
+        width: 100%;
+        margin-top: var(--espacement-large);
+        transform: translateX(0);
+        opacity: 1; 
+
+        & > div {
+            transition: all 1000ms;
+        }
+
+        &.anime > div {
+            transform: translateX(-100%) scale(1.05);
+            opacity: 0;
+        }
+
+        &.droite {
+            text-align: right;
+        }
+
+    }
+}

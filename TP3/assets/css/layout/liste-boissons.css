@@ -1,0 +1,34 @@
+.liste-boissons {
+    & >*+* {
+		margin-top: 30px;
+	}
+}
+ 
+/* a  modifier éventuellement */
+.boisson {
+    border: 1px solid var(--couleur-accent);
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    flex: 1;
+    min-height: 100px;
+    min-width: 200px;
+}
+.boisson>.bouton{
+    margin-top: auto;
+}
+
+.produit_img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+
+
+@media screen and (max-width: 600px) {
+            
+    nav, nav ul, main {
+        flex-flow: column nowrap;
+    }
+}
